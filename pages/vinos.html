@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodega Gelvez</title>
+    <link rel="stylesheet" href="../css/skeleton.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/d6bfe580e8.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  /> 
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script> 
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+  <title>Document</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">   
+           <header class="header">
+          
+                  <div class="four columns">
+                      <h1><i class="fas fa-wine-glass-alt"></i>Wines</h1>
+                      
+                  </div>
+                  <a class= "text-center" style="font-size: 30px; text-decoration: none; color: white;" href="./reserva.html">Reservas</a>
+                  <div class="two columns u-pull-right">
+                      <ul>
+                          <li class="submenu">
+                              <img src="../img/cart.png" alt="">
+                              <div id="carrito">
+                                  <p  class="vacio">carrito vacio</p>
+                                  <table  class="u-full-width">
+                                      <thead>
+                                          <tr>
+                                              <th>Imagen</th>
+                                              <th>Vinos</th>
+                                              <th>Precio</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody id="lista-carrito">
+                                          
+                                      </tbody>
+                                  </table>
+                                  <a href="#" id="vaciar-carrito" class="button u-full-width">vaciar carrito</a>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </header>
+
+      
+
+      <!-- <div class="barra">
+          <div class="container">
+              <div class="row">
+                  <div class="four columns icono icono1">
+                      <i class="fas fa-wine-glass-alt"></i>
+                      <p>100 Vinos nuevos en nuestra bodega<br>
+                      Explora los nuevos vinos</p>
+                  </div>
+                  <div class="four columns icono icono2">
+                      <i class="fas fa-wine-glass-alt"></i>
+                      <p>Enologos expertos<br>
+                      Pruebas los nuevos vinos</p>
+                  </div>
+                  <div class="four columns icono icono3">
+                      <i class="fas fa-wine-glass-alt"></i>
+                      <p>Beber con moderación<br>
+                          Prohibida su venta a menores de 18 años</p>
+                  </div>
+              </div>
+          </div>
+      </div> -->
+
+
+
+            <div id="details" class="col-8"></div>
+            <div id="summary" class="col-4">
+              
+            </div>
+        </div>
+    </div>
+      
+    <script src="../class/userStore.js"></script>
+    <script src="../class/vinosItems.js"></script> 
+    <script src="../events/buttonEvents.js"></script>
+    
+    <script src="../functions/viewsController.js"></script> 
+    <!-- <script src="../js/comprar.js"></script> -->
+    <script src="../js/index.js"></script>
+    
+</body>
+</html>

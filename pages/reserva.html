@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de reserva</title>
+    <link rel="stylesheet" href="../css/reserva.css">
+   <!-- Bootswatch Cosmo Theme -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="./vinos.html">Shop</a>
+    </nav>
+
+
+    <div class="container">
+        <!-- APPLICATION -->
+        <div id="reservas" class="row pt-5">
+            
+            <!-- FORM -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div id= "cabecera-form" class="card-header">
+                        <h4>Reserva para nuestra bodega</h4>
+                    </div>
+                    <form id="formulario-reserva" class="card-body">
+                        <div class="form-group">
+                            <label>Nombre completo</label>
+                            <input  type="text" id="titularReserva" name="titularReserva" placeholder="Nombre completo" class="form-control">
+                            
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                        <input type="email" name="email" id="emailIngresado" class="form-control">
+                                
+                        </div>
+                        <div class="form-group">
+                            <label>Invitados</label>
+                            <input id="invitado1" type="text" name="invitados" class="form-control">
+                            <input id="invitado2" type="text" name="invitados" class="form-control">
+                            <input id="invitado3" type="text" name="invitados" class="form-control">
+                            <input id="invitado4" type="text" name="invitados" class="form-control">
+                                
+                        </div>
+                        <div class="form-group">
+                            <label>Fecha a reservar</label>
+                            <input type="date" name="fecha" id="date">
+                        </div>
+                        <input type="submit" id= "btnValidar" value="Enviar" class="btn btn-primary btn-block">
+                    </form>
+                    <button id="nuevaReserva">New reserva</button>
+                    
+                </div>
+            </div>
+            
+            <!-- reservas-list -->
+            <div id="reservas-list" class="col-md-8"></div>
+        </div>
+    </div>
+    <script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+    <script src="../class/reserva.js"></script>
+    <script src="../class/dateShowReserva.js"></script>
+    <script src="../functions/formsNews.js"></script>
+    <!-- <script src="../function/modales/main.js"></script> --> 
+    <script src="../js/reserva.js"></script>
+    <!-- <script src="../function/viewsData.js"></script> -->
+    
+</body>
+</html>
