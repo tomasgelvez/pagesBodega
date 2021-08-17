@@ -1,15 +1,19 @@
 class UserStore {
-  constructor(pName) {
+  constructor() {
     this.vinos = [];
-    this.nombre = pName;
+    
   }
 
-  setProduct(pId) {
+  setProduct(pId,pPrecio) {
     //Buscar producto en la variable global
     let vinosList = JSON.parse(
       localStorage.getItem(keyLocalStorageVinos)
     );
     let currentWines = vinosList.find((p) => p.vinoId === pId);
+
+    
+    let priceWines = vinosList.find((p) => p.vinoPrecio === pPrecio);
+    console.log(priceWines);
     
    
     //Disminuir el stock
@@ -23,4 +27,5 @@ class UserStore {
      this.vinos.push(newProductItem);
    else this.vinos.find((p) => p.id === newProductItem.id).quantity += 1;
  }
+ 
 }
